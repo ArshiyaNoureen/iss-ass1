@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blogstyle1.css">
+    <title>Blog Page</title>
+</head>
+<body>
+    <div class="blog" id="blog1">
+        <h2>Blog 1</h2>
+        <p>
+            Blog posts are versatile pieces of online content that serve various purposes, ranging from sharing personal experiences and opinions to providing informative articles on specific topics.One prevalent nature of blog posts is their ability to engage readers through storytelling. Authors often weave narratives, anecdotes, and personal insights into their posts to captivate and connect with their audience on a more personal level. This storytelling aspect not only makes the content more relatable but also enhances its entertainment value.<br>
+
+            Another characteristic of blog posts is their educational or informative nature. Many bloggers use their platforms to share expertise on particular subjects, offering valuable insights, tips, and advice to their readers. Whether it's a tutorial on a DIY project, an analysis of current events, or a guide to mastering a skill, informative blog posts aim to provide readers with useful and practical knowledge. This educational aspect often establishes bloggers as authorities in their respective fields and helps build trust and credibility with their audience.<br>
+        </p>
+        <div class="like-section">
+            <button id="likeButton1" onclick="like('blog1')">Like</button>
+            <div id="numlikes">
+                <span id="likeCount1">0</span> Likes
+            </div>
+        </div>
+        <div class="comments-section">
+            <textarea id="commentInput1" placeholder="Add a comment"></textarea>
+            <button id="add-comment"onclick="addComment('blog1')">Add Comment</button>
+        </div>
+        <ul id="commentList1"></ul>
+    </div>
+    <script src="blogscript1.js"></script>
+</body>
+</html>

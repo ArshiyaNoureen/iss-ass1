@@ -1,0 +1,263 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #007bff; 
+    color: black;
+}
+header {
+    background-color: #0056b3;
+    color: black;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 20px;
+    background-color:#0056b3;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#0056b3;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(248, 218, 218, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    border:none
+}
+.profile-image {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 50%;
+    animation: slideRight 1s ease-out forwards;
+    animation-delay: 1s;
+}
+.about-container {
+    font-size:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#0056b3; 
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-out;
+}
+#education {
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color:#0056b3;
+    height: 200px;
+    align-items: center;
+}
+.education-entry {
+    background-color:#007bff;
+    color: black; 
+    flex: 1 0 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: larger;
+}
+.achievement-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.achievement-container {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.achievement-box {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#0056b3;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+.skills-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.skills-container {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.skills-box {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#0056b3;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+.socialicons-heading{
+    margin-left: 20px;
+}
+#socials {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #0056b3;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-icons img {
+    margin-left:20px;
+    margin-right:20px;
+    width: 70px;
+    height: 70px;
+}
+.resume-heading{
+    margin-top: 200px;
+    margin-left: 20px;
+}
+#resume {
+    text-align: center;
+    background-color: #0056b3;
+    margin-top:10px;
+    margin-bottom: 200px;
+}
+.resume-link {
+    margin-top: 20px;
+}
+
+.resume-link p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.resume-link a {
+    display: inline-block;
+    margin-right: 20px;
+}
+.resume-link img {
+    width: 100px;
+    height: 50px;
+}
+#theme-toggle {
+    display: block;
+    margin: 20px auto;
+    background-color:#0056b3;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+article {
+    margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform:translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body.dark-mode {
+    background-color: rgb(5, 2, 24);
+    color: #fff;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode ul,
+body.dark-mode header,
+body.dark-mode nav a,
+body.dark-mode .dropdown .dropbtn,
+body.dark-mode .dropdown-content a,
+body.dark-mode section,
+body.dark-mode .about-container,
+body.dark-mode .education-entry,
+body.dark-mode .achievement-box,
+body.dark-mode .skills-box,
+body.dark-mode .social-icons p,
+body.dark-mode .resume-link p,
+body.dark-mode #theme-toggle {
+    color: #fff;
+}
+@keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+  
+
+

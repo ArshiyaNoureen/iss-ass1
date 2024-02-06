@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blogstyle2.css">
+    <title>Blog Page</title>
+</head>
+<body>
+    <div class="blog" id="blog1">
+        <h2>Blog 2</h2>
+        <p>
+            Blog posts frequently serve as platforms for discussion and debate. Authors often express their opinions and viewpoints on various topics, sparking conversations among readers in the comments section. These discussions can range from casual exchanges of ideas to heated debates, fostering a sense of community and interaction within the blog's audience. By encouraging dialogue and engagement, blog posts create opportunities for readers to voice their own perspectives and contribute to the ongoing conversation.<br>
+
+            Lastly, blog posts often incorporate multimedia elements to enhance their visual appeal and effectiveness. From eye-catching images and infographics to embedded videos and interactive features, multimedia elements help break up the text and make the content more engaging and accessible. Additionally, multimedia content allows bloggers to convey information in different formats, catering to the preferences and learning styles of diverse audiences. By leveraging multimedia, blog posts can deliver information more effectively and leave a lasting impression on readers.<br>
+        </p>
+        <div class="like-section">
+            <button id="likeButton1" onclick="like('blog1')">Like</button>
+            <div id="numlikes">
+                <span id="likeCount1">0</span> Likes
+            </div>
+        </div>
+        <div class="comments-section">
+            <textarea id="commentInput1" placeholder="Add a comment"></textarea>
+            <button id="add-comment"onclick="addComment('blog1')">Add Comment</button>
+        </div>
+        <ul id="commentList1"></ul>
+    </div>
+    <script src="blogscript2.js"></script>
+</body>
+</html>
